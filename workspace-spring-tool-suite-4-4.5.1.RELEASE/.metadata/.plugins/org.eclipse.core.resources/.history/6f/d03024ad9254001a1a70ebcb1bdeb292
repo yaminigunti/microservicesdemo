@@ -1,0 +1,5 @@
+package com.cts.springweb.controller;
+
+public class DefaultController {
+
+}

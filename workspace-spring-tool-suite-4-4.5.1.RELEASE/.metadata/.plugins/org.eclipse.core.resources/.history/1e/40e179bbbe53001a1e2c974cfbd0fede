@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+  
+   <bean id="g2" class="com.cts.did1.service.GreetServiceEnhancedImpl" scope="prototype">
+   
+   
+   
+  <property name="greeting" value="Welcome "></property> 
+     <!-- <constructor-arg = index="0" value="Namaskar" ></constructor-arg>   -->
+     </bean>
+     
+     <bean id="gnp1" class="com.cts.did1.service.GreetNoteProviderSimpleImpl"/>
+     <bean id="g3" class="com.cts.did1.service.GreetServiceAdvancedImpl2" autowire="byType"/>  
+      <bean id="gnp2" class="com.cts.did1.service.GreetNoteProviderSimpleImpl"/>   
+     </beans>

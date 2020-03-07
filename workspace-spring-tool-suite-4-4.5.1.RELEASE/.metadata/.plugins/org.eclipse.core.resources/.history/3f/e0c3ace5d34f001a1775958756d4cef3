@@ -1,0 +1,12 @@
+package com.cts.did.ui;
+
+import com.cts.did.service.GreetService;
+import com.cts.did.service.GreetServiceSimpleImpl;
+
+public class DidApp01 {
+	public static void main(String []args) {
+		GreetService gs=new GreetServiceSimpleImpl();
+		System.out.println(gs.greet("Yamini"));
+	}
+
+}

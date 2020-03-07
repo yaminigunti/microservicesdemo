@@ -1,0 +1,13 @@
+package com.cts.did1.ui;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.cts.did1.service.GreetService;
+
+public class DidApp1 {
+	ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
+	GreetService gs=(GreetService)context.getBean("g2");
+	System.out.println(gs.greet("Yam"));
+
+}
